@@ -1,10 +1,10 @@
 # will get stuff from mlbstartingnine and make it usable by excel
 
 replace_this = "<br />"
-fend = 'LineUp_20140512.txt'
+fend = 'LineUp_20140516.txt'
 raw_txt = []
 
-with open("data.txt", "r+") as file:
+with open("data20140516.txt", "r+") as file:
     raw_txt = file.readlines()
     #for line in file.readlines():
     #   raw_txt.extend(line)
