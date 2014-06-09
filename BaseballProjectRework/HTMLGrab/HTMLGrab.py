@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib2
 import pymongo
-import re
+import re, string
 
 def playerType(tablestring):
     """Hitter or pitcher?
@@ -42,6 +42,7 @@ def getTableData(table):
 
 #url = 'http://espn.go.com/mlb/player/stats/_/id/30836/mike-trout'
 url = 'http://espn.go.com/mlb/player/stats/_/id/6194/felix-hernandez'
+clean_url = re.sub('[%s]' % re.escape(string.punctuation), '', url)
 response = urllib2.urlopen(url)
 html = response.read()
 
@@ -52,17 +53,29 @@ header_stat_table = soup.find('table', {'class' : 'header-stats'})
 
 	
 conn = pymongo.MongoClient()
-db = conn[url.replace('.','').replace('/','').replace(':','')] # needs to be a better way to do this...
+db = conn.PlayerStats
 
-for table in tables:
+player_dict = {}
+
+for table in tables:    
     
     title, col_heads, data_rows = getTableData(table)
     
+    season_dict = {}
     for row in data_rows:
-    	data_dict={}
+    	data_dict = {}
     	for col in range(len(row)):
     		data_dict[col_heads[col]] = row[col]
-    	db[title].insert(data_dict)
+    	
+    	season_dict[str(data_dict['SEASON'])] = data_dict
+    
+    player_dict[title] = season_dict
+    
+
+player_dict['_id'] = clean_url
+    	
+db.Players.insert(player_dict)
+
 
 
 
