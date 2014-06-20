@@ -1,3 +1,10 @@
+## this file will simulate baseball games based on player stats
+
+## this was originally a matlab script, but is in the process of
+## being converted.  the file for generating inputs is still in
+## being converted as well, so neither file has been debugged or
+## checked for consistency with the original matlab results
+
 import random, sys
 
 ## base scenarios

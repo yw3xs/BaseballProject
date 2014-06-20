@@ -74,6 +74,45 @@ outcomesHIndex = 1
 runsA = [0 for n in range(numgames)]
 runsH = [0 for n in range(numgames)]
 
+for i in range(numGames)
+    inningNum = 1
+    baseState = 1
+    outs = 0
+    batterA = 1
+    batterH = 1
+    while (inningNum < 10 | runsA[i] == runsH[i]):
+        while outs < 3:
+            battingOutcome = simulationInput[batterA,outcomesA[outcomesAIndex]]
+            outs += outsAdder[baseState,battingOutcome]
+            if outs != 3:
+                runsA[i] += runsAdder[baseState,battingOutcome]
+                baseState = baseStateMatrix[baseState,battingOutcome]
+            
+            batterA += 1
+            if batterA == 10:
+                batterA = 1
+            
+            outcomesAIndex += 1
+        
+        outs = 0
+        baseState = 1
+        while outs < 3
+            battingOutcome = simulationInput[9 + batterH,outcomesH[outcomesHIndex]]
+            outs += outsAdder[baseState,battingOutcome]
+            if outs != 3:
+                runsH[i] += runsAdder[baseState,battingOutcome]
+                baseState = baseStateMatrix[baseState,battingOutcome]
+            
+            batterH += 1
+            if batterH == 10:
+                batterH = 1
+            
+            outcomesHIndex += 1
+        
+        outs = 0
+        baseState = 1
+        inningNum += 1 
+
 
 
 

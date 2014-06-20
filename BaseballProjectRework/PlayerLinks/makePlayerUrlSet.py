@@ -1,3 +1,8 @@
+'''
+This file takes all of the urls generated previously and
+turns them into a set of unique entries.
+'''
+
 import os
 
 urls = []
