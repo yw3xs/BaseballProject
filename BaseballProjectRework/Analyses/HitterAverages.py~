@@ -1,0 +1,29 @@
+from pymongo import Connection
+from pylab import *
+
+conn = Connection()
+db = conn.PlayerStats
+hitters = db.Players.find({'player_type':'hitter'})
+
+
+for hitter in hitters:
+
+	dat = hitter['CAREER BATTING STATISTICS']
+	avgs = [float(dat[x]['AVG']) for x in dat.keys()
+			if (float(dat[x]['AB']) > 150) & (str(x) != 'Season Averages') &
+			(str(x) != 'Total')]
+			# this should be modified to have something like a NaN if 
+			# the condition is false
+	season = [int(dat[x]['YEAR']) for x in dat.keys() 
+			  if (str(x) != 'Season Averages') & (str(x) != 'Total')]
+	season_avg = [float(dat[x]['AVG']) for x in dat.keys()
+				  if (str(x) != 'Season Averages') & (str(x) != 'Total')]
+	figure(1)
+	plot(avgs)
+	figure(2)
+	scatter(season,season_avg)
+
+
+show()
+
+
