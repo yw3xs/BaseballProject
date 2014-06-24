@@ -1,15 +1,12 @@
 from bs4 import BeautifulSoup
 import urllib2
-from pymongo import *
 import re, string
 
 
-'''
-
+"""
 These are the functions called by the files in this folder that are
 being used to create the database (mongo) of player statistics
-
-'''
+"""
 
 
 def playerType(tablestring):
@@ -19,9 +16,9 @@ def playerType(tablestring):
     determine whether the player is a hitter or pitcher
     """
     if tablestring.find('AVG') > 0:
-	player_type = 'hitter'
+		player_type = 'hitter'
     else:
-	player_type = 'pitcher'
+		player_type = 'pitcher'
     return player_type
     
 
@@ -44,25 +41,41 @@ def getTableData(table):
 
     return title, col_heads, data_rows
 
-
-def dbInsert(base_url):
-	"""Insert data into a mongodb instance
-	
-	this will take the base_url and creat the url where the stats are contained,
-	it will get the stats and create a document for mongodb
+def makeSoup(url, tag, css_class):
+	"""
+	This function takes a url and gets the elements specified by tag with an optional
+	css class specified
 	"""
 	
-	url = base_url.replace('player/','player/stats/') # stats are here
-	clean_url = re.sub('[%s]' % re.escape(string.punctuation), '', base_url) # use as _id
-	
-	# get the tables containing stats using beautiful soup
 	response = urllib2.urlopen(url)
 	html = response.read()
 	soup = BeautifulSoup(html)
-	tables = soup('table', {'class' : 'tablehead'})
+	
+	if css_class == None:
+		element = soup(tag)
+	else:
+		element = soup(tag, {'class' : css_class})
+		
+	return element
 
+def removePunct(dirty_string):
+	"""This function removes punctuation from a string"""
 	
+	clean_string = re.sub('[%s]' % re.escape(string.punctuation), '', dirty_string)
+	return clean_string
+
+
+def careerStats(base_url):
+	"""
+	this will take the base_url and creat the url where the stats are contained,
+	it will get the stats and create a document for later insertion into mongodb
+	"""
 	
+	url = base_url.replace('player/','player/stats/') # stats are here
+	clean_url = removePunct(base_url) # use as _id
+	
+	# get the tables containing stats using beautiful soup
+	tables = makeSoup(url, 'table', 'tablehead')
 
 	player_dict = {}
 
@@ -89,10 +102,7 @@ def dbInsert(base_url):
     
 
 	# find out if player is a hitter or pitcher
-	base_response = urllib2.urlopen(base_url)
-	base_html = base_response.read()
-	base_soup = BeautifulSoup(base_html)
-	header_stat_table = base_soup.find('table', {'class' : 'header-stats'})
+	header_stat_table = makeSoup(base_url, 'table', 'header-stats')
 	player_type = playerType(str(header_stat_table))
 
 	# create the rest of the player_dict entries
@@ -100,10 +110,110 @@ def dbInsert(base_url):
 	player_dict['base_url'] = base_url
 	player_dict['_id'] = clean_url
 	player_dict['name'] = base_url.split('/')[-1].replace('-', ' ') # get player name from end of url
+	
+	return player_dict
+	
+	
+def splits(player_dict, base_url):
+	"""
+	This function is to be called after careerStats, it will take the previously 
+	created player_dict and update it with each players splits, for pitchers, it
+	will get both pitching and batting splits, but earlier years wont' have batting
+	splits which will return an error that should be caught by the try/except
+	"""
+	
+	# this url modification gets splits
+	url = base_url.replace('player/','player/splits/')
+	
+	# get list of urls containing splits
+	options = makeSoup(url, 'option', css_class = None)
+	splits = []
+	for option in options:
+		if option.has_attr('value'):
+			if (option['value'].find('splits') > 0) & (option['value'].find('year') > 0):
+				splits.append(str(option['value']))
+
+
+	split_dict = {}
+
+	for split in splits:
+	
+		try:
+
+			tables = makeSoup(split, 'table', 'tablehead')
+		
+			title, col_heads, data_rows = getTableData(tables[0])
+			season_dict = {}
+			season_dict['url'] = split
+    
+			for row in data_rows:
+				data_dict = {}
+				for col in range(len(row)):
+					data_dict[col_heads[col]] = row[col]
+				data_key = removePunct(row[0])
+				season_dict[data_key] = data_dict
+		
+			split_dict[title.strip('\n')] = season_dict	
+			
+		except:
+			print 'error with ' + split + ', printing url to file...'
+			with open('split_errors.txt','w') as file:
+				file.write(split + '\n')
+	
+	player_dict['Splits'] = split_dict
+	return player_dict
+	
+
+def pitcherBatting(player_dict, base_url):
+	"""
+	This function will be called after splits and should be wrapped in an
+	if statement to determine first whether or not the player is a pitcher.
+	"""
+	
+	# this url modification gets pitchers batting stats page
+	# http://espn.go.com/mlb/player/_/id/6194/felix-hernandez
+	# http://espn.go.com/mlb/player/stats/_/id/6194/type/batting/felix-hernandez
+	url = base_url.replace('player/','player/stats/')
+	index = url.rfind('/') + 1
+	url = url[0:index] + 'type/batting/' + url[index:]
+	
+	tables = makeSoup(url, 'table', 'tablehead')
+
+
+	try:
+		
+		for table in tables:    
+    
+			title, col_heads, data_rows = getTableData(table)
+    
+			season_dict = {}
+			for row in data_rows:
+				data_dict = {}
+				for col in range(len(row)):
+					data_dict[col_heads[col]] = row[col]
     	
+				season_dict[str(data_dict[col_heads[0]])] = data_dict
+
+    		# there are two tables called 'MISCELLANEOUS', this block makes sure
+	    	# the second one doesn't simply replace the first in the dict
+			try: 
+				for season in season_dict.keys():
+					if ((season != 'Total') & (season != 'Season Averages')):
+						player_dict[title][season].update(season_dict[season])
+			except:
+				player_dict[title] = season_dict
+	
+	except:
+		print 'error with ' + url + ', print url to file...'
+		with open('pitcher_hitting_errors.txt',2) as file:
+			file.write(url + '\n')
+	
+	return player_dict
+	
     	
-    # put document in mongodb instance	
-	conn = pymongo.MongoClient()
-	db = conn.PlayerStats
-	db.Players.insert(player_dict)
+
+
+
+
+
 
