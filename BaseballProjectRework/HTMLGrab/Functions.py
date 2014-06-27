@@ -157,7 +157,7 @@ def splits(player_dict, base_url):
 			
 		except:
 			print 'error with ' + split + ', printing url to file...'
-			with open('split_errors.txt','w') as file:
+			with open('split_errors.txt','a') as file:
 				file.write(split + '\n')
 	
 	player_dict['Splits'] = split_dict
@@ -205,7 +205,7 @@ def pitcherBatting(player_dict, base_url):
 	
 	except:
 		print 'error with ' + url + ', print url to file...'
-		with open('pitcher_hitting_errors.txt',2) as file:
+		with open('pitcher_hitting_errors.txt','a') as file:
 			file.write(url + '\n')
 	
 	return player_dict
