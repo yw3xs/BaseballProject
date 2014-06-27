@@ -1,0 +1,1134 @@
+http://scores.espn.go.com/mlb/boxscore?gameId=310402128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310403128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310405128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310406128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310407128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310408118&teams=florida-marlins-vs-houston-astros
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310409118&teams=florida-marlins-vs-houston-astros
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310410118&teams=florida-marlins-vs-houston-astros
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310412115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310413115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310414115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310415122&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310417122&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310419128&teams=pittsburgh-pirates-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310420128&teams=pittsburgh-pirates-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310421128&teams=pittsburgh-pirates-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310422128&teams=colorado-rockies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310423128&teams=colorado-rockies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310424128&teams=colorado-rockies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310425128&teams=los-angeles-dodgers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310426128&teams=los-angeles-dodgers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310427128&teams=los-angeles-dodgers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310429117&teams=florida-marlins-vs-cincinnati-reds
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310430117&teams=florida-marlins-vs-cincinnati-reds
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310501117&teams=florida-marlins-vs-cincinnati-reds
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310502124&teams=florida-marlins-vs-st.-louis-cardinals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310503124&teams=florida-marlins-vs-st.-louis-cardinals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310504124&teams=florida-marlins-vs-st.-louis-cardinals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310505124&teams=florida-marlins-vs-st.-louis-cardinals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310506128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310507128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310508128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310509128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310510128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310511128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310513120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310514120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310515120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310516121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310518128&teams=chicago-cubs-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310519128&teams=chicago-cubs-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310520128&teams=tampa-bay-rays-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310521128&teams=tampa-bay-rays-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310522128&teams=tampa-bay-rays-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310524126&teams=florida-marlins-vs-san-francisco-giants
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310525126&teams=florida-marlins-vs-san-francisco-giants
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310526126&teams=florida-marlins-vs-san-francisco-giants
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310527119&teams=florida-marlins-vs-los-angeles-dodgers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310528119&teams=florida-marlins-vs-los-angeles-dodgers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310529119&teams=florida-marlins-vs-los-angeles-dodgers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310530129&teams=florida-marlins-vs-arizona-diamondbacks
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310531129&teams=florida-marlins-vs-arizona-diamondbacks
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310601129&teams=florida-marlins-vs-arizona-diamondbacks
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310603128&teams=milwaukee-brewers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310604128&teams=milwaukee-brewers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310605128&teams=milwaukee-brewers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310606128&teams=milwaukee-brewers-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310607128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310608128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310609128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310610128&teams=arizona-diamondbacks-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310611128&teams=arizona-diamondbacks-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310612128&teams=arizona-diamondbacks-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310613128&teams=arizona-diamondbacks-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310614122&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310615222&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310615322&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310616122&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310617130&teams=florida-marlins-vs-tampa-bay-rays
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310618130&teams=florida-marlins-vs-tampa-bay-rays
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310619130&teams=florida-marlins-vs-tampa-bay-rays
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310620128&teams=los-angeles-angels-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310621128&teams=los-angeles-angels-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310622128&teams=los-angeles-angels-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310624128&teams=seattle-mariners-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310625128&teams=seattle-mariners-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310626128&teams=seattle-mariners-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310628111&teams=florida-marlins-vs-oakland-athletics
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310629111&teams=florida-marlins-vs-oakland-athletics
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310630111&teams=florida-marlins-vs-oakland-athletics
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310701113&teams=florida-marlins-vs-texas-rangers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310702113&teams=florida-marlins-vs-texas-rangers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310703113&teams=florida-marlins-vs-texas-rangers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310704128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310705128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310706128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310707128&teams=houston-astros-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310708128&teams=houston-astros-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310709128&teams=houston-astros-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310710128&teams=houston-astros-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310712132&teams=american-all-stars-vs-national-all-stars
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310714116&teams=florida-marlins-vs-chicago-cubs
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310715116&teams=florida-marlins-vs-chicago-cubs
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310716116&teams=florida-marlins-vs-chicago-cubs
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310717116&teams=florida-marlins-vs-chicago-cubs
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310718121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310719128&teams=san-diego-padres-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310720128&teams=san-diego-padres-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310721128&teams=san-diego-padres-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310722128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310723128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310724128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310726120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310727120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310728120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310729115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310730115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310731115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310801121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310802121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310804128&teams=st.-louis-cardinals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310805128&teams=st.-louis-cardinals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310806128&teams=st.-louis-cardinals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310807128&teams=st.-louis-cardinals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310808128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310809128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310810128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310812128&teams=san-francisco-giants-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310813128&teams=san-francisco-giants-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310814128&teams=san-francisco-giants-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310815127&teams=florida-marlins-vs-colorado-rockies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310816127&teams=florida-marlins-vs-colorado-rockies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310817127&teams=florida-marlins-vs-colorado-rockies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310818125&teams=florida-marlins-vs-san-diego-padres
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310819125&teams=florida-marlins-vs-san-diego-padres
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310820125&teams=florida-marlins-vs-san-diego-padres
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310821125&teams=florida-marlins-vs-san-diego-padres
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310823128&teams=cincinnati-reds-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310824228&teams=cincinnati-reds-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310824328&teams=cincinnati-reds-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310826122&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310829221&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310829321&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310830121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310831121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310901121&teams=florida-marlins-vs-new-york-mets
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310902128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310903128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310904128&teams=philadelphia-phillies-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310905128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310906128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310907128&teams=new-york-mets-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310909123&teams=florida-marlins-vs-pittsburgh-pirates
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310910123&teams=florida-marlins-vs-pittsburgh-pirates
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310911123&teams=florida-marlins-vs-pittsburgh-pirates
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310912115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310913115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310914115&teams=florida-marlins-vs-atlanta-braves
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310915222&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310915322&teams=florida-marlins-vs-philadelphia-phillies
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310916120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310917120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310918120&teams=florida-marlins-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310919128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310920128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310921128&teams=atlanta-braves-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310923108&teams=florida-marlins-vs-milwaukee-brewers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310924108&teams=florida-marlins-vs-milwaukee-brewers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310925108&teams=florida-marlins-vs-milwaukee-brewers
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310926128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310927128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=310928128&teams=washington-nationals-vs-florida-marlins
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 58, in boxScoreGrabber
+    home_score = boxScoreUnwrap(scores[1])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())

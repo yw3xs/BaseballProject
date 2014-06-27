@@ -1,0 +1,102 @@
+from Functions import *
+from pymongo import Connection
+import sys, traceback
+
+def getStarters(table):
+	'''This function gets urls of all the starting hitters'''
+	starters = []
+	rows=table('tr')
+	for row in rows:
+		rurl = re.search(r'href="([\S]+)"', str(row))
+		bad_str_1 = str(row).find('padding')
+		bad_str_2 = str(row).find(chr(160))
+		if (rurl) and (bad_str_1 <= 0) and (bad_str_2 <= 0):
+			starters.append(rurl.group(1))
+	return starters
+
+
+def boxScoreUnwrap(tr):
+	'''This function gets the box score information'''
+	score = []
+	for i in range(len(tr('td'))):
+		td = tr('td')[i]
+		if i == 0:
+			score.append(td.find('a').renderContents())
+		else:
+			s = re.search(r'([\d-]+)', td.renderContents())
+			score.append(s.group(1))
+			
+	return score
+
+def boxScoreGrabber(url):
+	'''
+	This function creates a dictionary with all the information
+	needed to compile the information for the simulation
+	'''
+	
+	doc = {}
+	id_str = removePunct(url)
+	doc['_id'] = id_str
+	doc['url'] = url
+	
+	tables = makeSoup(url, 'table', css_class = 'mod-data mlb-box')
+
+	away_hitters = getStarters(tables[0])
+	home_hitters = getStarters(tables[2])
+	away_pitcher = getStarters(tables[1])[0]
+	home_pitcher = getStarters(tables[3])[0]
+	
+	doc['away hitters'] = away_hitters
+	doc['home hitters'] = home_hitters
+	doc['away pitcher'] = away_pitcher
+	doc['home pitcher'] = home_pitcher
+
+	line_score = makeSoup(url, 'table', css_class = 'linescore')
+
+	col_heads = []
+	head_row = line_score[0].find('tr', {'class' : 'periods'})
+	for td in head_row('td'):
+		col_heads.extend([td.renderContents()])
+	col_heads[0] = 'Team'
+	scores = line_score[0]('tr')[1:]
+
+	away_score = boxScoreUnwrap(scores[0])
+	home_score = boxScoreUnwrap(scores[1])	
+	
+	away_score_dict = {}
+	home_score_dict = {}
+	
+	for col in range(len(col_heads)):
+		away_score_dict[col_heads[col]] = away_score[col]
+		home_score_dict[col_heads[col]] = home_score[col]
+		
+	doc['away scoring'] = away_score_dict
+	doc['home scoring'] = home_score_dict
+
+	return doc
+	
+	
+c = Connection()
+db = c.BoxScores	
+
+with open('Urls2013.txt','r') as file:
+	lines = file.readlines()
+
+i = 1
+for line in lines:
+	print 'processing url ' + str(i) + ' out of ' + str(len(lines))
+	i += 1
+	url = line.strip('\n').strip('"')
+	try:
+		doc = boxScoreGrabber(url)
+		db.BoxScores2013.insert(doc)
+	except:
+		print 'error with ' + url
+		exc_type, exc_value, exc_traceback = sys.exc_info()
+		with open('box score errors 2013.txt','a') as f:
+			f.write(url + '\n')
+			traceback.print_tb(exc_traceback, file=f)
+		pass
+		
+
+

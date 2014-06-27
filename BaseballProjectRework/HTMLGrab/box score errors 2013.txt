@@ -1,0 +1,7 @@
+http://scores.espn.go.com/mlb/boxscore?gameId=330716132&teams=american-all-stars-vs-national-all-stars
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())

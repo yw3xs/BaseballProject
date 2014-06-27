@@ -1,0 +1,45 @@
+http://scores.espn.go.com/mlb/boxscore?gameId=320710131&teams=national-all-stars-vs-american-all-stars
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 57, in boxScoreGrabber
+    away_score = boxScoreUnwrap(scores[0])
+  File "BoxScoreGrab.py", line 22, in boxScoreUnwrap
+    score.append(td.find('a').renderContents())
+http://scores.espn.go.com/mlb/boxscore?gameId=320820120&teams=atlanta-braves-vs-washington-nationals
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 36, in boxScoreGrabber
+    tables = makeSoup(url, 'table', css_class = 'mod-data mlb-box')
+  File "/home/aaron/git/baseball/BaseballProject/BaseballProjectRework/HTMLGrab/Functions.py", line 50, in makeSoup
+    response = urllib2.urlopen(url)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+http://scores.espn.go.com/mlb/boxscore?gameId=320901105&teams=texas-rangers-vs-cleveland-indians
+  File "BoxScoreGrab.py", line 85, in <module>
+    doc = boxScoreGrabber(url)
+  File "BoxScoreGrab.py", line 36, in boxScoreGrabber
+    tables = makeSoup(url, 'table', css_class = 'mod-data mlb-box')
+  File "/home/aaron/git/baseball/BaseballProject/BaseballProjectRework/HTMLGrab/Functions.py", line 50, in makeSoup
+    response = urllib2.urlopen(url)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)

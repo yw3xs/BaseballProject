@@ -3,10 +3,10 @@ import urllib2
 import re, string
 
 
-'''
+"""
 These are the functions called by the files in this folder that are
 being used to create the database (mongo) of player statistics
-'''
+"""
 
 
 def playerType(tablestring):
