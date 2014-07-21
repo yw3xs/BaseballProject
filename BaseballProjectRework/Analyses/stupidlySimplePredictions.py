@@ -131,9 +131,11 @@ def regressionFun(X,y):
 				'r':r, 'rmse':rmse, 'R2_test':R2_test}
 	fig3 = plt.figure(3)
 	plt.plot(y_pred, y_test, 'bo', alpha=.3, label=label_str)
+	print 'Linear regression coefficients: '
+	print clf1.coef_
 	
 	# linear regression with quadratic input parameters
-	X_sq = X*X
+	X_sq = np.concatenate((X,X*X),axis=1)
 	X2_train, X2_test, y2_train, y2_test = train_test_split(X_sq,y,test_size=.3,random_state=123)
 	
 	clf2 = linear_model.LinearRegression()
@@ -143,6 +145,9 @@ def regressionFun(X,y):
 	R2_test2 = clf2.score(X2_test, y2_test)
 	r2 = pearsonr(y2_pred, y_test)[0]
 	rmse2 = sqrt(np.mean((y2_pred-y_test)**2))
+	
+	print 'Quadratic regression coefficients: '
+	print clf2.coef_
 	
 	label_str2 = 'Quadratic inputs \nr = %(r).2f \nRMSE = %(rmse).3f \nR squared = %(R2_test).2f' % {
 	'r':r2, 'rmse':rmse2, 'R2_test':R2_test2}
@@ -158,7 +163,7 @@ def regressionFun(X,y):
 	
 	
 def main():
-	X, y = getSomeDataFromFile('HRminAB75minSeasons5.txt')
+	X, y = getSomeDataFromFile('HRminAB50minSeasons5.txt')
 	
 	# use all past data
 	pred_y1, pred_errors1 = predict_y(X, y)
