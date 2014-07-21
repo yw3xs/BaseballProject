@@ -17,7 +17,7 @@ def getData(curs, stat_str):
 		# gather data in try/except loop because some keys represent
 		# aggregate info already, i.e. 'Total' or 'Averages'
 		try: 
-			if float(c_car[key]['AB']) > 75:
+			if float(c_car[key]['AB']) > 50:
 				stat_list.append((int(key),float(c_car[key][stat_str])/float(c_car[key]['AB'])))
 		except:
 			pass

@@ -158,7 +158,7 @@ def regressionFun(X,y):
 	
 	
 def main():
-	X, y = getSomeDataFromFile('HRminAB75minSeasons5.txt')
+	X, y = getSomeDataFromFile('HRminABA50minSeasons5.txt')
 	
 	# use all past data
 	pred_y1, pred_errors1 = predict_y(X, y)
