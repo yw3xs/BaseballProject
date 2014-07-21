@@ -8,7 +8,7 @@ from math import sqrt
 
 ## call these functions on files created using AnalysisFunctions.py
 
-def getSomeDataFromFile(file_str):
+def get_data_from_file(file_str):
 	'''
 	Read in some time series data; the last value in each row
 	is the value we want to predict, the preceding values are
@@ -111,7 +111,8 @@ def compare_predictions(y, pred_y1, pred_errors1, pred1_disc, pred_y2, pred_erro
 	plt.xlabel('Predicted values')
 	plt.ylabel('Actual values')
 	
-def regressionFun(X,y):
+def regression_fun(X,y):
+	'''Run linear regression on linear and quadratic input data'''
 	
 	# linear regression with linear input parameters
 	X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=.3,random_state=123)
@@ -163,7 +164,7 @@ def regressionFun(X,y):
 	
 	
 def main():
-	X, y = getSomeDataFromFile('HRminAB50minSeasons5.txt')
+	X, y = get_data_from_file('HRminAB50minSeasons5.txt')
 	
 	# use all past data
 	pred_y1, pred_errors1 = predict_y(X, y)
@@ -176,7 +177,7 @@ def main():
 	compare_predictions(y, pred_y1, pred_errors1, pred1_disc, pred_y2, pred_errors2, pred2_disc)
 	
 	# use regression models
-	regressionFun(X,y)
+	regression_fun(X,y)
 	
 	# plot stuff
 	plt.show()
@@ -185,8 +186,7 @@ if __name__ == '__main__':
 	main()
 
 
-## next will be to make one prediction using regression with training and test set,
-## and one prediction using time series forcasting methods
+## next will be making prediction based on time forecasting methods
 	
 	
 	
