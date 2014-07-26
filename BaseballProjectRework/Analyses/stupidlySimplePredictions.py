@@ -1,4 +1,4 @@
-import csv
+import csv, sys
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.stats import pearsonr
@@ -8,7 +8,7 @@ from math import sqrt
 
 ## call these functions on files created using AnalysisFunctions.py
 
-def get_data_from_file(file_str):
+def get_data_from_file(file_str, num_years):
 	'''
 	Read in some time series data; the last value in each row
 	is the value we want to predict, the preceding values are
@@ -20,8 +20,7 @@ def get_data_from_file(file_str):
 	with open(file_str,'r') as csvfile:
 		all_data = csv.reader(csvfile)
 		for row in all_data:
-			data.append([float(x) for x in row[:5]])
-			
+			data.append([float(x) for x in row[:num_years]])
 	row_length = len(data[0])
 	X = np.zeros([len(data),row_length-1])
 	y = np.zeros([len(data),1])
@@ -117,7 +116,8 @@ def regression_fun(X,y):
 	# linear regression with linear input parameters
 	X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=.3,random_state=123)
 	
-	clf1 = linear_model.LinearRegression()
+	clf1 = linear_model.LinearRegression(normalize=True)
+	#clf1 = linear_model.Ridge(alpha=.25)
 	clf1.fit(X_train, y_train)
 	
 	R2_train = clf1.score(X_train, y_train)
@@ -132,39 +132,24 @@ def regression_fun(X,y):
 				'r':r, 'rmse':rmse, 'R2_test':R2_test}
 	fig3 = plt.figure(3)
 	plt.plot(y_pred, y_test, 'bo', alpha=.3, label=label_str)
-	print 'Linear regression coefficients: '
+	
+	print 'Linear regression coefficients using sklearn: '
 	print clf1.coef_
-	
-	# linear regression with quadratic input parameters
-	X_sq = np.concatenate((X,X*X),axis=1)
-	X2_train, X2_test, y2_train, y2_test = train_test_split(X_sq,y,test_size=.3,random_state=123)
-	
-	clf2 = linear_model.LinearRegression()
-	clf2.fit(X2_train, y2_train)
-	
-	y2_pred = clf2.predict(X2_test)
-	R2_test2 = clf2.score(X2_test, y2_test)
-	r2 = pearsonr(y2_pred, y_test)[0]
-	rmse2 = sqrt(np.mean((y2_pred-y_test)**2))
-	
-	print 'Quadratic regression coefficients: '
-	print clf2.coef_
-	
-	label_str2 = 'Quadratic inputs \nr = %(r).2f \nRMSE = %(rmse).3f \nR squared = %(R2_test).2f' % {
-	'r':r2, 'rmse':rmse2, 'R2_test':R2_test2}
-	plt.plot(y2_pred, y_test, 'ro', alpha =.3, label=label_str2)
 	
 	plt.plot(goal, goal, 'g-')
 	plt.title('Actual Values vs. Predicted Values using Regression')
 	plt.xlabel('Predicted value')
 	plt.ylabel('Actual value')
 	plt.legend(loc='upper left')
-	
-	
-	
+		
 	
 def main():
-	X, y = get_data_from_file('HRminAB50minSeasons5.txt')
+	
+	command = sys.argv[1]
+	f_string, num_years = command.split()
+	num_years = int(num_years)
+		
+	X, y = get_data_from_file(f_string, num_years)
 	
 	# use all past data
 	pred_y1, pred_errors1 = predict_y(X, y)

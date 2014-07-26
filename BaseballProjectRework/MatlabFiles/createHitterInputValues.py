@@ -6,7 +6,7 @@ from pymongo import Connection
 
 # database stuff
 c = Connection()
-db = c.PlayerStats
+hitter_db = c.PlayerStats
 
 # keys for needed stats
 ab_key = 'AB' # everything will be divided by this
@@ -41,7 +41,6 @@ def get_season(season_dict, mi_season_dict):
 		
 	ab = float(season_dict[ab_key]) + stats[0] # total of listed at bats and walks
 	
-	# pass a flag = 1 if threshold is not met
 	if ab < threshold:
 		season = rookie_stats
 	else:
@@ -85,7 +84,7 @@ def get_hitter(player_url, current_year, location):
 	is either 'Home' or 'Away'.
 	'''
 	
-	player = db.Stats.find_one({'base_url':player_url})
+	player = hitter_db.Stats.find_one({'base_url':player_url})
 	
 	
 	ca_potential_keys = player['CAREER BATTING STATISTICS'].keys()
