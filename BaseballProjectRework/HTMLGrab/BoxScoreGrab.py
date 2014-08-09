@@ -1,9 +1,21 @@
+'''
+This file is meant to retrieve box scores and relevant information
+to be used in testing of various models for predicting the outcomes
+of baseball games
+
+'''
+
+
 from Functions import *
 from pymongo import Connection
 import sys, traceback
 
 def getStarters(table):
-	'''This function gets urls of all the starting hitters'''
+	'''
+	This function gets urls of all the starting hitters which are used
+	as identifiers in the database
+	'''
+	
 	starters = []
 	rows=table('tr')
 	for row in rows:
@@ -21,6 +33,7 @@ def getStarters(table):
 
 def boxScoreUnwrap(tr):
 	'''This function gets the box score information'''
+	
 	score = []
 	for i in range(len(tr('td'))):
 		td = tr('td')[i]
@@ -87,28 +100,29 @@ def boxScoreGrabber(url):
 # this was run one year at a time and the year
 # appearing below was updated each time manually
 	
-c = Connection()
-db = c.BoxScores	
+if __name__ == '__main__':
+	c = Connection()
+	db = c.BoxScores	
 
-with open('Urls2013.txt','r') as file:
-	lines = file.readlines()
+	with open('Urls2013.txt','r') as file:
+		lines = file.readlines()
 
-i = 1
-for line in lines:
-	print 'processing url ' + str(i) + ' out of ' + str(len(lines))
-	i += 1
-	url = line.strip('\n').strip('"')
-	try:
-		doc = boxScoreGrabber(url)
-		db.BoxScores2013.insert(doc)
-	except:
-		# record errors
-		print 'error with ' + url
-		exc_type, exc_value, exc_traceback = sys.exc_info()
-		with open('box score errors 2013.txt','a') as f:
-			f.write(url + '\n')
-			traceback.print_tb(exc_traceback, file=f)
-		pass
+	i = 1
+	for line in lines:
+		print 'processing url ' + str(i) + ' out of ' + str(len(lines))
+		i += 1
+		url = line.strip('\n').strip('"')
+		try:
+			doc = boxScoreGrabber(url)
+			db.BoxScores2013.insert(doc)
+		except:
+			# record errors
+			print 'error with ' + url
+			exc_type, exc_value, exc_traceback = sys.exc_info()
+			with open('box score errors 2013.txt','a') as f:
+				f.write(url + '\n')
+				traceback.print_tb(exc_traceback, file=f)
+			pass
 		
 
 

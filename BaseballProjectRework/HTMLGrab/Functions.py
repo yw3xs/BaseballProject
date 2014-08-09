@@ -5,7 +5,8 @@ import re, string
 
 """
 These are the functions called by the files in this folder that are
-being used to create the database (mongo) of player statistics
+being used to create the database (mongo) of player statistics.  They
+make use of html structure specifc to espn.
 """
 
 
@@ -15,6 +16,7 @@ def playerType(tablestring):
     give this function the table with class 'header-stats' in order to
     determine whether the player is a hitter or pitcher
     """
+    
     if tablestring.find('AVG') > 0:
 		player_type = 'hitter'
     else:
@@ -24,18 +26,23 @@ def playerType(tablestring):
 
 def getTableData(table):
     """Get title, column heads, and data from table with class 'tablehead'"""
+    
+    # the row with class stathead contains the title of the table
     title = table.find('tr', {'class' : 'stathead'}).find('td').renderContents()
+    
+    # the row with class colhead contains the column headers
     header_row = table.find('tr', {'class' : 'colhead'})
     col_heads = []
     for td in header_row('td'):
-    	col_heads.extend([td.renderContents()])
+    	col_heads.append(td.renderContents())
     
+    # data is contained in the other rows - even and odd row
     data = table.findAll('tr', {'class' : ['evenrow', 'oddrow']})
     data_rows = []
     for tr in data:
     	row = []	
     	for td in tr('td'):
-    		row.extend([td.renderContents()])
+    		row.append(td.renderContents())
     	
     	data_rows.append(row)
 
@@ -47,10 +54,12 @@ def makeSoup(url, tag, css_class):
 	css class specified
 	"""
 	
+	# this is pretty standard for BeautifulSoup
 	response = urllib2.urlopen(url)
 	html = response.read()
 	soup = BeautifulSoup(html)
 	
+	# make css_class optional
 	if css_class == None:
 		element = soup(tag)
 	else:
@@ -81,14 +90,19 @@ def careerStats(base_url):
 
 	for table in tables:    
     
+    	# get the table info into lists
 		title, col_heads, data_rows = getTableData(table)
-    
+    	
+    	# put everything in a nested dict - in the outermost layers, the
+    	# keys represent the year, in inner layers, the keys represent
+    	# the names of a given stat
 		season_dict = {}
 		for row in data_rows:
+			# break down a given season
 			data_dict = {}
 			for col in range(len(row)):
 				data_dict[col_heads[col]] = row[col]
-    	
+    		# insert this season into the dict containing all seasons
 			season_dict[str(data_dict[col_heads[0]])] = data_dict
 
     	# there are two tables called 'MISCELLANEOUS', this block makes sure
@@ -125,7 +139,7 @@ def splits(player_dict, base_url):
 	# this url modification gets splits
 	url = base_url.replace('player/','player/splits/')
 	
-	# get list of urls containing splits
+	# get list of urls containing splits from individual seasons
 	options = makeSoup(url, 'option', css_class = None)
 	splits = []
 	for option in options:
@@ -134,10 +148,13 @@ def splits(player_dict, base_url):
 				splits.append(str(option['value']))
 
 
+	# each split in split_dict will represent a season broken down in various 
+	# subcategories of related stats
 	split_dict = {}
 
 	for split in splits:
 	
+		# this part is error prone, use try/except so errors don't ruin everything
 		try:
 
 			tables = makeSoup(split, 'table', 'tablehead')
@@ -146,6 +163,7 @@ def splits(player_dict, base_url):
 			season_dict = {}
 			season_dict['url'] = split
     
+    		# similar process to careerStats()
 			for row in data_rows:
 				data_dict = {}
 				for col in range(len(row)):
@@ -155,6 +173,8 @@ def splits(player_dict, base_url):
 		
 			split_dict[title.strip('\n')] = season_dict	
 			
+		# keep a record of errors in an external file as well as print 
+		# to the console
 		except:
 			print 'error with ' + split + ', printing url to file...'
 			with open('split_errors.txt','a') as file:
